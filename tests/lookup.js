@@ -83,6 +83,9 @@ var tests = {
 
             var dist8 = zipcodes.distance(62595, '62595');
             assert.equal(dist8, 0);
+
+            var dist9 = zipcodes.distance('63005', '08512');
+            assert.equal(dist9, 866);
         },
         'should not find': function() {
             var dist = zipcodes.distance(62959, 123456);
