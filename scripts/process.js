@@ -33,18 +33,15 @@ data.forEach(function(line, num) {
         o.zip = clean(line[1]);
         o.latitude = Number(clean(line[6]));
         o.longitude = Number(clean(line[7]));
-        o.city = ucfirst(clean(line[3]));
+        o.city.push(ucfirst(clean(line[3])));
         o.state = clean(line[4]);
         if (!zips[o.zip]) {
             zips[o.zip] = o;
-            var key = o.zip + '_' + o.city;
-            zips[key] = o;
         } 
         else {
-            var key = o.zip + '_' + o.city;
-            zips[key] = o;
+            var zipObject = zips[o.zip];
+            zipObject.city.push(o.city);
         }
-
     }
 });
 

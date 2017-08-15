@@ -26,12 +26,12 @@ var tests = {
             assert.equal(marion.city, 'Marion');
         }
     },
-    'Spillertown': {
+    'Carson': {
         topic: function() {
-            return zipcodes.lookup(62959, 'Spillertown');
+            return zipcodes.lookup(90810, 'Carson');
         },
-        'should be ok': function(spillertown) {
-            assert.equal(spillertown.city, 'Spillertown');
+        'should be ok': function(carson) {
+            assert.equal(carson.city, 'Carson');
         }
     },
     'Kananaskis': {
@@ -145,7 +145,7 @@ var tests = {
         },
         'should find': function() {
             var rad = zipcodes.radius(62959, 20);
-            assert.equal(rad.length, 38);
+            assert.equal(rad.length, 37);
 
             var rad = zipcodes.radius(95014, 50);
             assert.equal(rad.length, 370);
@@ -156,7 +156,7 @@ var tests = {
                 zip: '93901',
                 latitude: 36.6677,
                 longitude: -121.6596,
-                city: 'Salinas',
+                city: ['Salinas'],
                 state: 'CA'
             });
         }
