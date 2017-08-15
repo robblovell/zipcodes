@@ -22,13 +22,11 @@ var ucfirst = function (str) {
 };
 
 data.forEach(function (line, num) {
-
-    var o = { city: [] };
-    var city = null;
     line = line.split('\t');
     if (line.length > 1) {
+        const o = { city: [] };
+        const city = ucfirst(clean(line[2]));
         o.zip = clean(line[1]);
-        city = ucfirst(clean(line[2]));
         if (!zips[o.zip]) {
             o.latitude = Number(clean(line[9]));
             o.longitude = Number(clean(line[10]));
