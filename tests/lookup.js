@@ -23,7 +23,7 @@ var tests = {
             return zipcodes.lookup(62959);
         },
         'should be ok': function(marion) {
-            assert.equal(marion.city, 'Marion');
+            assert.equal(marion.city[0], 'Marion');
         }
     },
     'Carson': {
@@ -31,7 +31,7 @@ var tests = {
             return zipcodes.lookup(90810, 'Carson');
         },
         'should be ok': function(carson) {
-            assert.equal(carson.city, 'Carson');
+            assert.equal(carson.city[0], 'Carson');
         }
     },
     'Kananaskis': {
@@ -39,7 +39,7 @@ var tests = {
         return zipcodes.lookup("T0L");
       },
       'should be ok': function(kananaskis) {
-        assert.equal(kananaskis.city, "Kananaskis Country (claresholm)");
+        assert.equal(kananaskis.city[0], "Kananaskis Country (claresholm)");
       }
     },
     'BC': {
@@ -55,7 +55,7 @@ var tests = {
             return zipcodes.lookup(90210);
         },
         'should be ok': function(hills) {
-            assert.equal(hills.city, 'Beverly Hills');
+            assert.equal(hills.city[0], 'Beverly Hills');
         }
     },
     'distance': {
