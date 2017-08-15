@@ -26,21 +26,21 @@ var ucfirst = function(str) {
 };
 
 data.forEach(function(line, num) {
+    var o = { city: [] };
+    var city = null;
     line = line.split(',');
     if (line.length > 1) {
-        var o = {};
-
         o.zip = clean(line[1]);
         o.latitude = Number(clean(line[6]));
         o.longitude = Number(clean(line[7]));
-        o.city.push(ucfirst(clean(line[3])));
+        city = ucfirst(clean(line[3]));
+        o.city.push(city);
         o.state = clean(line[4]);
         if (!zips[o.zip]) {
             zips[o.zip] = o;
         } 
         else {
-            var zipObject = zips[o.zip];
-            zipObject.city.push(o.city);
+            zips[o.zip].city.push(city);
         }
     }
 });
