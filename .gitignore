@@ -4,3 +4,4 @@ coverage
 /scripts/.zip.csv.swp
 /scripts/free-zipcode-database.csv
 /scripts/zip.csv
+/npm-debug.log
