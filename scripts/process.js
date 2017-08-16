@@ -7,7 +7,6 @@ var fs = require('fs'),
 
 data.shift();
 
-
 var clean = function(str) {
     return str.replace(/"/g, '').trimLeft();
 }
