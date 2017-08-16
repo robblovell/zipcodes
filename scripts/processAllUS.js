@@ -37,26 +37,6 @@ const addCityToZips = (zip, city) => {
     return zip.city
 };
 
-dataFree.forEach(function(line, num) {
-    line = line.split(',');
-    if (line.length > 1) {
-        const o = { city: [] };
-        const city = ucfirst(clean(line[3]));
-        o.zip = clean(line[1]);
-        if (!zips[o.zip]) {
-            o.latitude = Number(clean(line[6]));
-            o.longitude = Number(clean(line[7]));
-            const city = ucfirst(clean(line[3]));
-            o.state = clean(line[4]);
-            o.city = addCityToZips(o.city, city);
-            zips[o.zip] = o;
-        } 
-        else {
-            zips[o.zip].city = addCityToZips(zips[o.zip], city);
-        }
-    }
-});
-
 dataGeo.forEach(function (line, num) {
     line = line.split('\t');
     if (line.length > 1) {
@@ -77,6 +57,25 @@ dataGeo.forEach(function (line, num) {
     }
 });
 
+dataFree.forEach(function(line, num) {
+    line = line.split(',');
+    if (line.length > 1) {
+        const o = { city: [] };
+        const city = ucfirst(clean(line[3]));
+        o.zip = clean(line[1]);
+        if (!zips[o.zip]) {
+            o.latitude = Number(clean(line[6]));
+            o.longitude = Number(clean(line[7]));
+            const city = ucfirst(clean(line[3]));
+            o.state = clean(line[4]);
+            o.city = addCityToZips(o.city, city);
+            zips[o.zip] = o;
+        } 
+        else {
+            zips[o.zip].city = addCityToZips(zips[o.zip], city);
+        }
+    }
+});
 
 const stateMap = {};
 

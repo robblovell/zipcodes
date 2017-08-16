@@ -122,17 +122,17 @@ var tests = {
             assert.equal(l.length, 2);
 
             var l = zipcodes.lookupByName('New York', 'New York');
-            assert.equal(l.length, 146);
+            assert.equal(l.length, 165);
 
             var l = zipcodes.lookupByName('New York', 'NY');
-            assert.equal(l.length, 146);
+            assert.equal(l.length, 165);
         },
         'should find by state': function() {
             var l = zipcodes.lookupByState('RI');
-            assert.equal(l.length, 90);
+            assert.equal(l.length, 91);
 
             var l = zipcodes.lookupByState('ri');
-            assert.equal(l.length, 90);
+            assert.equal(l.length, 91);
 
             var l = zipcodes.lookupByState('foobar');
             assert.equal(l.length, 0);
@@ -145,13 +145,13 @@ var tests = {
         },
         'should find': function() {
             var rad = zipcodes.radius(62959, 20);
-            assert.equal(rad.length, 37);
+            assert.equal(rad.length, 38);
 
             var rad = zipcodes.radius(95014, 50);
-            assert.equal(rad.length, 370);
+            assert.equal(rad.length, 387);
             
             var rad = zipcodes.radius(95014, 50, true);
-            assert.equal(rad.length, 370);
+            assert.equal(rad.length, 387);
             assert.deepEqual(rad[0], {
                 zip: '93901',
                 latitude: 36.6677,
