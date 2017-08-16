@@ -6,6 +6,14 @@ var path = require('path'),
     zipcodes = require(path.join(__dirname, '../', 'lib'));
 
 var tests = {
+    'null response': {
+        topic: function() {
+            return zipcodes.lookup("85281", "blah");
+        },
+        'returns null when zipcode not found': function(nothing) {
+            assert.equal(nothing,null);
+        }
+    },
     'should export': {
         topic: function() {
             return zipcodes;
