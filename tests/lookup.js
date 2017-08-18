@@ -42,6 +42,22 @@ var tests = {
             assert.equal(carson.city[0], 'Carson');
         }
     },
+    'CarsonLowerCase': {
+        topic: function() {
+            return zipcodes.lookup(90810, 'carson');
+        },
+        'should be ok': function(carson) {
+            assert.equal(carson.city[0], 'Carson');
+        }
+    },
+    'CarsonUpperCase': {
+        topic: function() {
+            return zipcodes.lookup(90810, 'CARSON');
+        },
+        'should be ok': function(carson) {
+            assert.equal(carson.city[0], 'Carson');
+        }
+    },
     'Kananaskis': {
       topic: function() {
         return zipcodes.lookup("T0L");
