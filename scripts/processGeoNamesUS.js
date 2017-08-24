@@ -6,7 +6,7 @@ var fs = require('fs'),
 
 var clean = function (str) {
     return str.replace(/"/g, '').trimLeft();
-}
+};
 
 var ucfirst = function (str) {
     str = str.toLowerCase();

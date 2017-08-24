@@ -168,6 +168,24 @@ var tests = {
                 state: 'CA'
             });
         }
+    },
+    'NMFCLookups': {
+        topic: function () {
+            return null;
+        },
+        'should find by nmfc': function () {
+            const l = zipcodes.nmfcLookup('186590');
+            assert.equal(l.class, "85.00");
+            assert.equal(l.description, "Electric hand held Power Tools, or parts");
+            assert.equal(l.item, "Tools");
+            assert.equal(l.nmfc, "186590");
+            assert.equal(l.sub, " ");
+
+        },
+        'should return null for non nmfc': function () {
+            const l = zipcodes.nmfcLookup('11111');
+            assert.equal(l,null);
+        }
     }
 };
 
