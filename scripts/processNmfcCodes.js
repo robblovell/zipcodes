@@ -18,7 +18,7 @@ data.forEach((line, num) => {
         NMFCCodes[line[3]] = {
             item: line[0],
             description: line[1].replace(/\"/g,""),
-            class: fixClassCode(line[2]),
+            classCode: fixClassCode(line[2]),
             nmfc: fixNMFC(line[3]),
             sub: line[4]
         }
