@@ -20308,6 +20308,44 @@ US	63188	Saint Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
 US	63195	Saint Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
 US	63197	Saint Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
 US	63199	Saint Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US  63101	St. Louis	Missouri	MO	St. Louis (city)	510			38.6346	-90.1913	4
+US	63102	St. Louis	Missouri	MO	St. Louis (city)	510			38.6352	-90.1864	4
+US	63103	St. Louis	Missouri	MO	St. Louis (city)	510			38.6332	-90.2164	4
+US	63104	St. Louis	Missouri	MO	St. Louis (city)	510			38.6128	-90.2185	4
+US	63106	St. Louis	Missouri	MO	St. Louis (city)	510			38.6442	-90.2082	4
+US	63107	St. Louis	Missouri	MO	St. Louis (city)	510			38.6645	-90.2125	4
+US	63108	St. Louis	Missouri	MO	St. Louis (city)	510			38.6445	-90.2544	4
+US	63109	St. Louis	Missouri	MO	St. Louis (city)	510			38.5855	-90.2929	4
+US	63110	St. Louis	Missouri	MO	St. Louis (city)	510			38.6185	-90.2564	4
+US	63111	St. Louis	Missouri	MO	St. Louis (city)	510			38.5633	-90.2495	4
+US	63112	St. Louis	Missouri	MO	St. Louis (city)	510			38.6616	-90.2819	4
+US	63113	St. Louis	Missouri	MO	St. Louis (city)	510			38.659	-90.2496	4
+US	63115	St. Louis	Missouri	MO	St. Louis (city)	510			38.6756	-90.2385	4
+US	63116	St. Louis	Missouri	MO	St. Louis (city)	510			38.5814	-90.2625	4
+US	63118	St. Louis	Missouri	MO	St. Louis (city)	510			38.5943	-90.2309	4
+US	63120	St. Louis	Missouri	MO	St. Louis (city)	510			38.6909	-90.2595	4
+US	63139	St. Louis	Missouri	MO	St. Louis (city)	510			38.6108	-90.292	4
+US	63147	St. Louis	Missouri	MO	St. Louis (city)	510			38.7139	-90.2375	4
+US	63150	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63155	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63156	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63157	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63158	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63160	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63163	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63164	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63166	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63169	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63171	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63177	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63178	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63179	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63180	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63182	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63188	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63195	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
+US	63197	St. Louis	Missouri	MO	St. Louis (city)	510			38.6273	-90.1979	4
+US	63199	St. Louis	Missouri	MO	St. Louis (city)	510			38.6531	-90.2435	4
 US	96950	Saipan		MP	Northern Mariana Islands	010			15.1917	145.7472	1
 US	96952	Tinian		MP	Northern Mariana Islands	010			15.0125	145.625	4
 US	96951	Rota		MP	Sterling	431			31.8243	-101.0372	1
